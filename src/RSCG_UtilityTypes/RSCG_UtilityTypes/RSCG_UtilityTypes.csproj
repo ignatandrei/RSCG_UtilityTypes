@@ -28,12 +28,14 @@
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
+		<None Remove="bin\Debug\netstandard2.0\\RSCG_UtilityTypes.dll" />
+		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
 	</ItemGroup>
 
 	<PropertyGroup>
 		<PackAsTool>false</PackAsTool>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<Version>2023.1223.1100</Version>
+		<Version>2023.1223.1200</Version>
 		<Authors>Andrei Ignat</Authors>
 		<Description>Roslyn Utility Types - Pick, Omit</Description>
 		<Title>RSCG Utility Types</Title>
