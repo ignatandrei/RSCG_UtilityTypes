@@ -19,7 +19,7 @@
 	<PropertyGroup>
 		<PackAsTool>false</PackAsTool>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<Version>2023.1223.1200</Version>
+		<Version>2023.1223.1230</Version>
 		<Authors>Andrei Ignat</Authors>
 		<Description>Roslyn Utility Types Common </Description>
 		<Title>RSCG Utility Types</Title>

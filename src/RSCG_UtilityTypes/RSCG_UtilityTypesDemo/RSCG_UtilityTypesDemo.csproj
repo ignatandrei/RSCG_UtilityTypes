@@ -14,8 +14,8 @@
   <ItemGroup>
     <ProjectReference Include="..\RSCG_UtilityTypesCommon\RSCG_UtilityTypesCommon.csproj" />
     <ProjectReference Include="..\RSCG_UtilityTypes\RSCG_UtilityTypes.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-	  <!--<PackageReference Include="RSCG_UtilityTypes" Version="2023.1223.1200" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />-->
-	  <!--<PackageReference Include="RSCG_UtilityTypesCommon" Version="2023.1223.1200" />-->
+	  <!--<PackageReference Include="RSCG_UtilityTypes" Version="2023.1223.1230" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />-->
+	  <!--<PackageReference Include="RSCG_UtilityTypesCommon" Version="2023.1223.1230" />-->
   </ItemGroup>
 	<PropertyGroup>
 		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
