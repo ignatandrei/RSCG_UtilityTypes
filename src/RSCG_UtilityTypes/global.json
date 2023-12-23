@@ -1,0 +1,11 @@
+{
+ 
+  "scripts": {
+    "build": "dotnet build --configuration Release",
+    "test": "dotnet test --configuration Release",
+    "ci": "dotnet r build && dotnet r test",
+    "packCommon": "dotnet pack RSCG_UtilityTypesCommon/RSCG_UtilityTypesCommon.csproj -o PACK --no-build -c Release ",
+    "packTemplating": "dotnet pack RSCG_UtilityTypes/RSCG_UtilityTypes.csproj -o PACK --no-build -c Release ",
+    "pack":"dotnet r build && dotnet r packCommon && dotnet r packTemplating"
+  }
+}

@@ -1,0 +1,28 @@
+name: Github push nuget 
+on:
+  push:
+    tags:
+      - "v*.*.*"
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+
+    - name: Build
+      run: |
+        cd src
+        cd RSCG_UtilityTypes
+        dotnet tool restore
+        dotnet r pack
+
+    - name: push nuget
+      run: |
+          dotnet nuget push ${{github.workspace}}/src/RSCG_UtilityTypes/PACK/*symb*.*pkg --api-key  ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
+  

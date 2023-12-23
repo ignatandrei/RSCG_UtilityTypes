@@ -19,4 +19,45 @@
 		<PackageReference Include="Microsoft.CodeAnalysis" Version="4.8.0" />
 	</ItemGroup>
 
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+
+		<None Include="../../../README.md" Pack="true" PackagePath="\" />
+		<None Include="../../../readme.txt">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<PackAsTool>false</PackAsTool>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<Version>2023.1223.1100</Version>
+		<Authors>Andrei Ignat</Authors>
+		<Description>Roslyn Utility Types - Pick, Omit</Description>
+		<Title>RSCG Utility Types</Title>
+		<PackageTags>C#;.NET;Roslyn</PackageTags>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<!--
+	<PackageIcon>tb.png</PackageIcon>
+    -->
+		<RepositoryUrl>https://github.com/ignatandrei/RSCG_UtilityTypes</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/ignatandrei/RSCG_UtilityTypes</PackageProjectUrl>
+		<RepositoryType>GIT</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Copyright>MIT</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<IncludeSymbols>true</IncludeSymbols>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<Deterministic>true</Deterministic>
+		<DebugType>embedded</DebugType>
+
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	</PropertyGroup>
+
+
 </Project>
