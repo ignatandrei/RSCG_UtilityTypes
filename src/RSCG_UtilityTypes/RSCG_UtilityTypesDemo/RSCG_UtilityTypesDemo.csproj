@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="rscg_build.ps1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RSCG_UtilityTypesCommon\RSCG_UtilityTypesCommon.csproj" />
     <ProjectReference Include="..\RSCG_UtilityTypes\RSCG_UtilityTypes.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
   </ItemGroup>
